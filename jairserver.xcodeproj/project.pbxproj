@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5340610D6AF89800638BB54A /* libPods-jairserver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB5B14AFDC28C5162973C0F /* libPods-jairserver.a */; };
+		616F7133C3C70EB1560A190A /* AirPlayHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 616F75F6A6C15CAA23659C73 /* AirPlayHTTPServer.m */; };
+		616F7898AD63C856B0AA6B8C /* AirPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 616F74BD7A8A43BA2BC4D765 /* AirPlayController.m */; };
+		616F7973A3F036CB6B030107 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 616F75EBF5DE1D8F4E7ADCB4 /* DeviceInfo.m */; };
+		616F7FDB9FD6DB2CD1B4C5A0 /* AirPlayHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 616F7918F82EAFBFA1FE3B31 /* AirPlayHTTPConnection.m */; };
+		DE1693F52351652500816C77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1693F42351652500816C77 /* AppDelegate.m */; };
+		DE1693F82351652500816C77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1693F72351652500816C77 /* ViewController.m */; };
+		DE1693FA2351652600816C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1693F92351652600816C77 /* Assets.xcassets */; };
+		DE1693FD2351652600816C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1693FB2351652600816C77 /* Main.storyboard */; };
+		DE1694002351652600816C77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1693FF2351652600816C77 /* main.m */; };
+		DE838DEA2356F4B9007C4069 /* DDViewLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DE838DE92356F4B9007C4069 /* DDViewLogger.m */; };
+		DEBB4B6C23559661008F2E85 /* HTTPReverseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBB4B6B23559661008F2E85 /* HTTPReverseResponse.m */; };
+		DEBB4B6F23559D5E008F2E85 /* AirPlayHTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBB4B6E23559D5E008F2E85 /* AirPlayHTTPDataResponse.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		612EC9F5524B940EF88FD2AF /* Pods-jairserver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jairserver.debug.xcconfig"; path = "Target Support Files/Pods-jairserver/Pods-jairserver.debug.xcconfig"; sourceTree = "<group>"; };
+		616F7041B86826D2A3D73783 /* AirPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPlayController.h; sourceTree = "<group>"; };
+		616F74BD7A8A43BA2BC4D765 /* AirPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirPlayController.m; sourceTree = "<group>"; };
+		616F75EBF5DE1D8F4E7ADCB4 /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
+		616F75F6A6C15CAA23659C73 /* AirPlayHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirPlayHTTPServer.m; sourceTree = "<group>"; };
+		616F7616EAACE7D8251D4104 /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		616F7759BE0C2071CD53AE7D /* AirPlayHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPlayHTTPServer.h; sourceTree = "<group>"; };
+		616F782F7511D96406ADBDAE /* AirPlayHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPlayHTTPConnection.h; sourceTree = "<group>"; };
+		616F7918F82EAFBFA1FE3B31 /* AirPlayHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirPlayHTTPConnection.m; sourceTree = "<group>"; };
+		CAB5B14AFDC28C5162973C0F /* libPods-jairserver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-jairserver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1693F02351652500816C77 /* jairserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jairserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1693F32351652500816C77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE1693F42351652500816C77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE1693F62351652500816C77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DE1693F72351652500816C77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DE1693F92351652600816C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE1693FC2351652600816C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE1693FE2351652600816C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE1693FF2351652600816C77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE1694012351652600816C77 /* jairserver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = jairserver.entitlements; sourceTree = "<group>"; };
+		DE838DE82356F4B9007C4069 /* DDViewLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDViewLogger.h; sourceTree = "<group>"; };
+		DE838DE92356F4B9007C4069 /* DDViewLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDViewLogger.m; sourceTree = "<group>"; };
+		DEBB4B6A23559661008F2E85 /* HTTPReverseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPReverseResponse.h; path = "../../../../../Downloads/AirView-master/HTTPServer/HTTPReverseResponse.h"; sourceTree = "<group>"; };
+		DEBB4B6B23559661008F2E85 /* HTTPReverseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPReverseResponse.m; path = "../../../../../Downloads/AirView-master/HTTPServer/HTTPReverseResponse.m"; sourceTree = "<group>"; };
+		DEBB4B6D23559D5E008F2E85 /* AirPlayHTTPDataResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirPlayHTTPDataResponse.h; sourceTree = "<group>"; };
+		DEBB4B6E23559D5E008F2E85 /* AirPlayHTTPDataResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirPlayHTTPDataResponse.m; sourceTree = "<group>"; };
+		E6196A52DD87195B58C07DEF /* Pods-jairserver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jairserver.release.xcconfig"; path = "Target Support Files/Pods-jairserver/Pods-jairserver.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE1693ED2351652500816C77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5340610D6AF89800638BB54A /* libPods-jairserver.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		616F7CB51A8A54F6D03ECAFB /* airplay */ = {
+			isa = PBXGroup;
+			children = (
+				DEBB4B6A23559661008F2E85 /* HTTPReverseResponse.h */,
+				DEBB4B6B23559661008F2E85 /* HTTPReverseResponse.m */,
+				616F7041B86826D2A3D73783 /* AirPlayController.h */,
+				616F74BD7A8A43BA2BC4D765 /* AirPlayController.m */,
+				616F782F7511D96406ADBDAE /* AirPlayHTTPConnection.h */,
+				616F7918F82EAFBFA1FE3B31 /* AirPlayHTTPConnection.m */,
+				616F7759BE0C2071CD53AE7D /* AirPlayHTTPServer.h */,
+				616F75F6A6C15CAA23659C73 /* AirPlayHTTPServer.m */,
+				616F7616EAACE7D8251D4104 /* DeviceInfo.h */,
+				616F75EBF5DE1D8F4E7ADCB4 /* DeviceInfo.m */,
+				DEBB4B6D23559D5E008F2E85 /* AirPlayHTTPDataResponse.h */,
+				DEBB4B6E23559D5E008F2E85 /* AirPlayHTTPDataResponse.m */,
+			);
+			path = airplay;
+			sourceTree = "<group>";
+		};
+		68FEE4846AEEF3CF0F7F6648 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5B14AFDC28C5162973C0F /* libPods-jairserver.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BDD6A43DE62ADD33B72E708 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				612EC9F5524B940EF88FD2AF /* Pods-jairserver.debug.xcconfig */,
+				E6196A52DD87195B58C07DEF /* Pods-jairserver.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE1693E72351652500816C77 = {
+			isa = PBXGroup;
+			children = (
+				DE1693F22351652500816C77 /* jairserver */,
+				DE1693F12351652500816C77 /* Products */,
+				7BDD6A43DE62ADD33B72E708 /* Pods */,
+				68FEE4846AEEF3CF0F7F6648 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE1693F12351652500816C77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE1693F02351652500816C77 /* jairserver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE1693F22351652500816C77 /* jairserver */ = {
+			isa = PBXGroup;
+			children = (
+				DE1693F32351652500816C77 /* AppDelegate.h */,
+				DE1693F42351652500816C77 /* AppDelegate.m */,
+				DE1693F62351652500816C77 /* ViewController.h */,
+				DE1693F72351652500816C77 /* ViewController.m */,
+				DE838DE82356F4B9007C4069 /* DDViewLogger.h */,
+				DE838DE92356F4B9007C4069 /* DDViewLogger.m */,
+				DE1693F92351652600816C77 /* Assets.xcassets */,
+				DE1693FB2351652600816C77 /* Main.storyboard */,
+				DE1693FE2351652600816C77 /* Info.plist */,
+				DE1693FF2351652600816C77 /* main.m */,
+				DE1694012351652600816C77 /* jairserver.entitlements */,
+				616F7CB51A8A54F6D03ECAFB /* airplay */,
+			);
+			path = jairserver;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE1693EF2351652500816C77 /* jairserver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE1694042351652600816C77 /* Build configuration list for PBXNativeTarget "jairserver" */;
+			buildPhases = (
+				1B8F5A9B92EE6F81AE2CC921 /* [CP] Check Pods Manifest.lock */,
+				DE1693EC2351652500816C77 /* Sources */,
+				DE1693ED2351652500816C77 /* Frameworks */,
+				DE1693EE2351652500816C77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jairserver;
+			productName = jairserver;
+			productReference = DE1693F02351652500816C77 /* jairserver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE1693E82351652500816C77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = app;
+				TargetAttributes = {
+					DE1693EF2351652500816C77 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = DE1693EB2351652500816C77 /* Build configuration list for PBXProject "jairserver" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE1693E72351652500816C77;
+			productRefGroup = DE1693F12351652500816C77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE1693EF2351652500816C77 /* jairserver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE1693EE2351652500816C77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1693FA2351652600816C77 /* Assets.xcassets in Resources */,
+				DE1693FD2351652600816C77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B8F5A9B92EE6F81AE2CC921 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jairserver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE1693EC2351652500816C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1693F82351652500816C77 /* ViewController.m in Sources */,
+				DE1694002351652600816C77 /* main.m in Sources */,
+				DE1693F52351652500816C77 /* AppDelegate.m in Sources */,
+				DEBB4B6C23559661008F2E85 /* HTTPReverseResponse.m in Sources */,
+				616F7898AD63C856B0AA6B8C /* AirPlayController.m in Sources */,
+				616F7FDB9FD6DB2CD1B4C5A0 /* AirPlayHTTPConnection.m in Sources */,
+				616F7133C3C70EB1560A190A /* AirPlayHTTPServer.m in Sources */,
+				616F7973A3F036CB6B030107 /* DeviceInfo.m in Sources */,
+				DEBB4B6F23559D5E008F2E85 /* AirPlayHTTPDataResponse.m in Sources */,
+				DE838DEA2356F4B9007C4069 /* DDViewLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE1693FB2351652600816C77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE1693FC2351652600816C77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE1694022351652600816C77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DE1694032351652600816C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DE1694052351652600816C77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 612EC9F5524B940EF88FD2AF /* Pods-jairserver.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 37Y64B4ZZF;
+				INFOPLIST_FILE = jairserver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.desk.jairserver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		DE1694062351652600816C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6196A52DD87195B58C07DEF /* Pods-jairserver.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 37Y64B4ZZF;
+				INFOPLIST_FILE = jairserver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.desk.jairserver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE1693EB2351652500816C77 /* Build configuration list for PBXProject "jairserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1694022351652600816C77 /* Debug */,
+				DE1694032351652600816C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE1694042351652600816C77 /* Build configuration list for PBXNativeTarget "jairserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1694052351652600816C77 /* Debug */,
+				DE1694062351652600816C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE1693E82351652500816C77 /* Project object */;
+}
